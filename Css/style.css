@@ -1,0 +1,545 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  margin: auto;
+  width: 1170px;
+  border-color: lightcoral;
+}
+.clr{
+  clear: both;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+img{
+  vertical-align: middle;
+}
+.mar{
+  margin-right: 0 !important;
+}
+body{
+   font-family: 'Inter', sans-serif;
+}
+.pera{
+  font-size: 16px;
+  line-height: 27px;
+  color: #181818;
+}
+.title h2{
+color: #181818;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+margin-bottom: 20px;
+}
+.title p{
+  color: rgba(24, 24, 24, 0.70);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  
+}
+/* =======================
+common css end
+======================= */
+
+/* =======================
+Menu part start
+======================= */
+#main_menu .logo{
+  width: 20%;
+  float: left;
+}
+#main_menu .menu{
+  width: 60%;
+  float: left;
+  text-align: center;
+}
+#main_menu .menu ul li{
+  display: inline-block;
+} 
+
+#main_menu ul li a{
+  margin-top: 32px;
+  transition: .4s;
+}
+#main_menu ul li a:hover{
+  color: #5956E8;
+}
+#main_menu a{
+  padding: 13px 18px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #181818;
+  position: relative;
+}
+#main_menu a .shape{
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #5956E8;
+  position: absolute;
+  left: 50%;
+  top: 24px;
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0;
+  transition: .4s; 
+}
+#main_menu a:hover .shape{
+  opacity: 1;
+  top: 45px;
+}
+
+#main_menu .button{
+  width: 20%;
+  float: left;
+  text-align: right;
+  transition: .4s;
+}
+
+#main_menu .button a{
+  margin-top: 32px;
+  background-color: #5956E8;
+  border-radius: 10px;
+  color: white;
+}
+#main_menu .button a:hover{
+  background-color: orange;
+  color: black;
+}
+
+/* =======================
+Menu part end
+======================= */
+
+/* =======================
+  Banner part start
+  ======================= */
+  #banner{
+    background-color: #5956E8;
+    padding: 182px 0;
+  }
+  #banner .banner_text{
+    width: 536px;
+    float: left;
+    padding-top: 50px;
+  }
+  #banner .banner_text p{
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+  #banner .banner_text h1{
+    color: white;
+    font-size: 65px;
+    line-height: 80px;
+  }
+  #banner .banner_text a{
+    padding: 13px 18px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 10px;
+    color: #5956E8;
+  }
+  #banner .banner_img{
+    width: 634px;
+    float: left;
+    text-align: right;
+  }
+ 
+/* =======================
+  Banner part end
+  ======================= */
+/* =======================
+ Services part start
+  ======================= */
+  #services{
+    padding-top: 100px;
+  }
+  #services .title{
+    margin-bottom: 50px;
+  }
+  #services .title p{
+    width: 530px;
+    margin: auto;
+  }
+  #services .item{
+    width: 369px;
+    border: 1px solid #E3E3E3;
+    float: left;
+    margin-right: 31.51px;
+    margin-bottom: 30px;
+    padding: 60px 48px;
+    border-radius: 10px;
+    transition: .4s;
+  }
+  #services .item:hover{
+    border-color: transparent;
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+  }
+  #services .item i{
+    font-size: 37px;
+    color: #5956E8;
+    height: 71px;
+    width: 71px;
+    border: 1px solid #5956E8;
+    text-align: center;
+    line-height: 71px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: .4s;
+  }
+  #services .item:hover i{
+    background-color: #5956E8;
+    color: white;
+  }
+  #services .item h2{
+   color: #181818;
+   font-size: 25px;
+   font-weight: 700;
+   margin-bottom: 20px;
+  }
+
+/* =======================
+  Services part end
+  ======================= */
+
+/* =======================
+  protfolio part start
+  ======================= */
+  #protfolio{
+    padding-top: 100px;
+  }
+  #protfolio .title p{
+    width: 530px;
+    margin: auto;
+  }
+  #protfolio .control_button{
+    margin: auto;
+    width: 800px;
+    padding: 23px 0;
+    background-color: rgba(89, 86, 232, 0.05);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  #protfolio .control_button ul li{
+    display: inline-block;
+    padding: 0 20px;
+    color: #181818;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .4s;
+    position: relative;
+  }
+  #protfolio .control_button ul li:hover{
+    color: #5956E8;
+  }
+  #protfolio .control_button ul li::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: -20%;
+    height: 4px;
+    background-color: #5956E8;
+    width: 100%;
+    transition: .4s;
+    transform: scaleX(0);
+  }
+  #protfolio .control_button ul li:hover:after{
+    transform: scaleX(1);
+  }
+  #protfolio .main{
+    margin-top: 50px;
+  }
+  #protfolio .main .item{
+    width: 270px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin-right: 29.99px;
+    margin-bottom: 100px;
+    
+    
+  }
+  #protfolio .main .item img{
+    width: 100%;
+  }
+  #protfolio .overlay{
+    background-color: #5956E8;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%) scale(0);
+    width: 250px;
+    text-align: center;
+    padding: 25px 0;
+    border-radius: 10px;
+    color: white;
+    transition: .4s;
+  }
+  #protfolio .overlay a{
+    color: white;
+  }
+  #protfolio .item:hover .overlay{
+    transform: translateX(-50%) scale(1); 
+  }
+/* =======================
+  protfolio part end
+  ======================= */
+
+/* =======================
+  team part end
+  ======================= */
+
+  /* #team{
+    padding-top: 100px;
+  } */
+  #team .title{
+    width: 530px;
+    margin: auto;
+  }
+  #team .team_members{
+    margin-top: 50px;
+  }
+  #team .item {
+    width: 370px;
+    float: left;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin-right: 20.02px;
+    margin-bottom: 100px;
+}
+  #team .item img{
+    width: 100%;
+  }
+  #team .item::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, #5956E8 0%, rgba(255, 255, 255, 0.00) 100%);
+
+  }
+  #team .item .deatails{
+    position: absolute;
+    left: 50%;
+    bottom: 34px;
+    transform: translateX(-50%);
+    color: white;
+  }
+ 
+  /* =======================
+ teampart end
+  ======================= */
+  /* =======================
+ Customer start
+  ======================= */
+  
+  #customer .title h2{
+    color: #181818;
+    font-size: 40px;
+    font-weight: 700;
+    width: 603px;
+    text-align: left;
+  }
+  #customer .title p{
+    font-size: 16px;
+    color: rgba(24, 24, 24, 0.70);
+    font-weight: 400;
+    width: 542px;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+  #customer .item{
+    width: 370px;
+    border: 1px solid #E3E3E3;
+    float: left;
+    margin-right: 31.51px;
+    margin-bottom: 30px;
+    padding: 60px 48px;
+    border-radius: 10px;
+    transition: .4s;
+    overflow: hidden;
+    text-align: left;
+    margin-right: 20.02px;
+    margin-bottom: 100px;
+  }
+  #customer .item img{
+    padding-top: 30px;
+  }
+  #customer .item .deatails p{
+      margin-top: 20px;
+      color: rgba(24, 24, 24, 0.70);
+      font-size: 16px;
+      font-weight: 400;
+  }
+  #customer .item .deatails h2{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 25px;
+   }
+  #customer .item .deatails h6{
+    color: #5D5D5D;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+   }
+  #customer .item:hover{
+    border-color: transparent;
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+  }
+ 
+  
+  /* =======================
+ Customer  end
+  ======================= */
+
+  /* =======================
+News part end
+  ======================= */
+ 
+  #news .title{
+    width: 530px;
+    margin: auto;
+  }
+  #news .main{
+    margin-top: 50px;
+  }
+#news .title h2{
+    color: #181818;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    width: 603px;
+  }
+  #news .title p{
+    font-size: 16px;
+    color: rgba(24, 24, 24, 0.70);
+    font-weight: 400;
+    width: 530px;
+    margin-bottom: 50px;
+  }
+  #news .item{
+    width: 370px;
+    border: 1px solid #E3E3E3;
+    float: left;
+    margin-right: 31.51px;
+    margin-bottom: 30px;
+    padding: 17px 19px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20.02px;
+    margin-bottom: 100px;
+  }
+  #news .item img{
+    width: 100%;
+  }
+ 
+  #news .item .admin{
+    float: left;
+    padding-right: 15px;
+    padding-top: 15px;
+   
+  }
+  #news .item .date{
+    float: left;
+    padding: 15px 15px;
+  }
+ 
+  #news .item .deatails h2{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 600;
+    width: 271px;
+    margin-top: 10px;
+   }
+
+   #news .item .deatails p{
+     margin-top: 20px;
+     color: rgba(24, 24, 24, 0.70);
+     font-size: 16px;
+     font-weight: 400;
+     width: 300px;
+    }
+    #news .item .deatails a{
+      color: #5956E8;
+      font-size: 16px;
+      font-weight: 600;
+      padding-top: 10px;
+    }
+  /* =======================
+ News part  end
+  ======================= */
+
+  /* =======================
+ footer part  end
+  ======================= */
+  #footer{
+    padding: 50px 0;
+    background: rgba(89, 86, 232, 0.10);
+  }
+  #footer .item{
+    float: left;
+  }
+  #footer .item_1{
+    width: 375px;
+    
+  }
+  #footer .item_2{
+    width: 95px;
+    margin-right: 92px;
+  }
+  #footer .item_3{
+    width: 112px;
+    margin-right: 92px;
+  }
+  #footer .item_4{
+    width: 136px;
+    margin-right: 92px;
+  }
+  #footer .item_5{
+    width: 157px;
+    margin-right: 92px;
+  }
+  #footer .item h1{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  #footer .item p{
+    color: #5D5D5D;
+    font-size: 16px;
+    font-weight: 400;
+    width: 300px;
+    padding-top: 20px;
+    
+  }
+  #footer .item ul li{
+    color: #5D5D5D;
+    font-size: 16px;
+    font-weight: 400;
+    width: 300px;
+    line-height: 27px;
+    
+  }
+
+  /* =======================
+ footer part  end
+  ======================= */
